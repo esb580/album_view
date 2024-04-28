@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Table</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!-- Replace 'field1', 'field2', etc. with the actual field names -->
+                <th>Name</th>
+                <th>Date</th>
+                <th>Band</th>
+                <!-- Add more <th> elements as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in data %}
+            <tr>
+                <td>{{ record.name }}</td>
+                <td>{{ record.date }}</td>
+                <td>{{ record.band }}</td>
+                <!-- Add more <td> elements as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
